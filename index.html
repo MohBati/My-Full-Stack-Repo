@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First website with Abstract Bootcamp</title>
+    <link rel="icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/62c59cb377f80c4f3cc5673c/6a63f926-52f7-427b-9127-5d0782981ace/favicon.ico?format=100w">
+<style>
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .googlelogo, header{
+        height: 50px;
+    }
+
+    nav, li {
+        margin-right: 10px;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    ul, h1, .copyright {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+      height: 100%;
+    }
+
+    nav li {
+      margin-right: 10px;
+      text-decoration: none;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+    }
+
+    footer, header{
+        color: white;
+        background-color: #333;
+    }
+
+    section{
+        box-shadow: 0px 0px 5px #aaa;
+        padding: 10px;
+        margin: 15px;
+    }
+
+    .googleimg{
+        height: 150px;
+    }
+
+    .highlight{
+        background-color: yellow;
+    }
+
+    footer{
+        display: flex;
+        height: 35px;
+        margin: 10px;
+        justify-content: space-between;
+    }
+
+    .inpt{
+        margin: 10px;
+    }
+
+</style>
+
+</head>
+
+<body>
+    <header>
+        <img class="googlelogo" src="https://www.citypng.com/public/uploads/preview/-11596996435so5kfp0ysk.png" alt="GoogleLogo">
+        <h1>Homepage</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to my first Website</h1>
+        <p>This is the first paragraph</p>
+        <p class="highlight">This is the second paragraph, highlighted with CSS</p>
+        <img class="googleimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRydSoaNDjZnI3wRRaDh97js6XxO_if78eZVg&usqp=CAU" alt="Googleimg">
+        <p>This is the third paragraph</p>
+        <a href="#" onclick="myFunction()">Click here to learn more</a>
+        <div>
+            <input id="input" class="inpt" type="text" value="To alert">
+            <button onclick="displayEnteredText()">Display</button>
+        </div>
+    </section>
+
+    <footer>
+        <p class="copyright">&copy; 2023 My website</p>
+        <ul>
+            <li><a href="#"">Facebook</a></li>
+            <li><a href="#"">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+        
+    </footer>
+
+    <script>
+        function myFunction(){
+            alert("You still have a lot to learn lol");
+        }
+
+        function displayEnteredText(){
+            var inputText = document.getElementById("input");
+            alert(inputText.value);
+        }
+    </script>
+
+</body>
